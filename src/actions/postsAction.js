@@ -10,7 +10,7 @@ export const listPosts = (objectId) => async (dispatch) => {
   try {
     dispatch({ type: POSTS_REQUEST });
     const { data } = await axios.get(
-      `http://hn.algolia.com/api/v1/items/${objectId.isOpenList}`
+      `https://hn.algolia.com/api/v1/items/${objectId.isOpenList}`
     );
 
     dispatch({

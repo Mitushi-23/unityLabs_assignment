@@ -14,7 +14,7 @@ export const searchPhotos = (query) => async (dispatch) => {
     
     dispatch({ type: PHOTOS_REQUEST });
     const { data } = await axios.get(
-      `http://hn.algolia.com/api/v1/search?query=${query}`
+      `https://hn.algolia.com/api/v1/search?query=${query}`
     );
 
     dispatch({
