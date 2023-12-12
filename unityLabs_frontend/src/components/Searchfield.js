@@ -1,13 +1,11 @@
 import React from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import InputBase from "@mui/material/InputBase";
-import { styled, alpha } from "@mui/material/styles";
+import { styled } from "@mui/material/styles";
 import { useDispatch, useSelector } from "react-redux";
 import { searchPhotos } from "../actions/photoActions";
 import ClearIcon from "@mui/icons-material/Clear";
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import { toggleOpenList } from "../actions/openListAction";
 import { searchQuery } from "../actions/searchQueryAction";
 
 const Search = styled("div")(({ theme }) => ({
@@ -59,21 +57,12 @@ const SearchField = () => {
 
   const handleSearch = (query) => {
     dispatch(searchPhotos(query));
-    // dispatch(toggleOpenList(false));
     dispatch(searchQuery(query));
-    // setquery(query);
   };
-
-
-  const navigate = useNavigate();
-
-
-
 
   const handleClose = (e) => {
     e.preventDefault();
     dispatch(searchQuery(""));
-    navigate("/");
   };
 
   const isDarkMode = useSelector((state) => state.darkMode.isDarkMode);

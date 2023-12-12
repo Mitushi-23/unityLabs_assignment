@@ -42,13 +42,13 @@ const Header = () => {
             variant="h4"
             sx={{ color: "white", fontWeight: "700", fontFamily: "Montserrat" }}
           >
-            Download High Quality Images by Creators
+            High Quality Stories by Creators
           </Typography>
           <Typography
             my={1}
             sx={{ color: "#C4C4C4", fontFamily: "Montserrat" }}
           >
-            Over 2.4 million+ stock Images by our talented community
+            Over 2.4 million+ stock stories by our talented community
           </Typography>
           {isSmallScreen &&
           <Search_feild />

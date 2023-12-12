@@ -41,7 +41,7 @@ const Navbar = () => {
           }}
           onClick={handleClick}
         >
-          Image Gallery
+          Story
         </Typography>
         <Box>
           <SearchField />
