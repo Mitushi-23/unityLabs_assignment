@@ -1,0 +1,17 @@
+.image_list{
+    column-count: 3 !important;
+    column-gap: 20px !important;
+    
+ }
+ @media (max-width:1200px) {
+     .image_list{
+ 
+         column-count: 2 !important;
+     }
+ }
+ @media (max-width:600px) {
+     .image_list{
+ 
+         column-count: 1 !important;
+     }
+ }

@@ -1,0 +1,1 @@
+export const TOGGLE_OPEN_LIST = "TOGGLE_OPEN_LIST";
